@@ -23,7 +23,8 @@ public class DynamicArray {
         return false;
     }
 
-    public int getByIndex(int index){
+    public
+    int getByIndex(int index){
         if(index > array.length){
             return 0;
         }
@@ -52,16 +53,17 @@ public class DynamicArray {
         }
     }
 
-    public void addValue(int index, int value){
-        int newVal = value;
-        for (int i = index; i < size + 1; i++) {
-            int tmp = newVal;
-            newVal = array[i];
+    public void add(int index, int value){
+        for (int i = index; i <= size; i++) {
+            int tmp = value;
+            value = array[i];
             array[i] = tmp;
         }
+        size++;
     }
 
     public void delete(int index){
+
         for (int i = index+1; i < size; i++) {
             array[i - 1] = array[i];
         }

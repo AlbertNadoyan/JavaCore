@@ -8,13 +8,16 @@ public class DynamicArrayDemo {
         dynamicArray.add(45);
         dynamicArray.add(6);
         dynamicArray.add(45);
+
         dynamicArray.add(100);
         dynamicArray.add(-9);
         dynamicArray.add(1);
         dynamicArray.add(33);
         dynamicArray.add(10);
         dynamicArray.add(0);
-        dynamicArray.add(5);
+        dynamicArray.add(100);
+        dynamicArray.add(101);
+        dynamicArray.add(102);
         System.out.print("Array list: ");
         dynamicArray.printArray();
         System.out.println();
@@ -29,7 +32,7 @@ public class DynamicArrayDemo {
         dynamicArray.printArray();
         System.out.println();
         System.out.print("Add method: ");
-        dynamicArray.addValue(1, 300);
+        dynamicArray.add(1, 300);
         dynamicArray.printArray();
 
 
